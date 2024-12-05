@@ -1,16 +1,10 @@
-.container {
+.drop-btn {
+  display: inline-block;
+  cursor: pointer;
   color: teal;
 }
 
-.invisible {
-  visibility: hidden;
-}
-
-.container {
-  display: inline-block;
-  cursor: pointer;
-}
-
+/*button component styles */
 .bar1,
 .bar2,
 .bar3 {
@@ -31,4 +25,23 @@
 
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
+}
+
+/* item styles */
+.items {
+  background-color: #333;
+  border-radius: 3px;
+  width: max-content;
+  padding: 10px;
+}
+
+.invisible {
+  visibility: hidden;
+  max-height: 0px;
+}
+
+.visible {
+  visibility: visible;
+  transition-property: all;
+  transition-duration: 1s;
 }

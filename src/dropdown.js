@@ -1,14 +1,20 @@
 function drawDropdown() {
-  const button = document.querySelector(".container");
-  const items = document.querySelector(".items");
-  button.addEventListener("click", () => {
-    transform(button, items);
+  const buttons = document.querySelectorAll(".drop-btn");
+  //   const items = document.querySelector(".items");
+
+  buttons.forEach((button) => {
+    const items = button.nextElementSibling;
+    button.addEventListener("click", (e) => {
+      console.log(e.currentTarget);
+      transform(button, items); //use this and maybe a class
+    });
   });
 }
 
 function transform(button, items) {
   button.classList.toggle("change");
   items.classList.toggle("invisible");
+  items.classList.toggle("visible");
 }
 
 export default drawDropdown;
