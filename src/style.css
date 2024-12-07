@@ -1,7 +1,14 @@
+body {
+  display: flex;
+}
+
+div {
+  color: white;
+}
+
 .drop-btn {
   display: inline-block;
   cursor: pointer;
-  color: teal;
 }
 
 /*button component styles */

@@ -1,6 +1,5 @@
 function drawDropdown() {
   const buttons = document.querySelectorAll(".drop-btn");
-  //   const items = document.querySelector(".items");
 
   buttons.forEach((button) => {
     const items = button.nextElementSibling;
