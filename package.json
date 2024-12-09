@@ -1,15 +1,21 @@
 {
-  "name": "dropdown",
+  "name": "@pigg-eh/dropdown",
   "author": "Ed Hunter <ep.hunter23@gmail.com>",
   "version": "1.0.0",
+  "main": "./index.js",
   "description": "",
-  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "dev": "webpack serve",
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
+  "files": [
+    "src/",
+    "dist/",
+    "index.html",
+    "style.css"
+  ],
   "keywords": [],
   "license": "ISC",
   "devDependencies": {
