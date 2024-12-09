@@ -1,10 +1,10 @@
 import "./style.css";
 import drawDropdown from "./dropdown";
 
-// index();
-function dropdownLoad() {
+dropdownLoad();
+export default function dropdownLoad() {
   drawDropdown();
   console.log("test works");
 }
 
-module.exports = dropdownLoad;
+// module.exports = dropdownLoad;
